@@ -29,27 +29,7 @@
                                                 </div>
                                              </div>
                                           </div>                                                                                           
-                                          <xsl:if test="'' = $request-uri"><!-- If page/home - show component -->  
-                                                   <!--<section id="home"> Jumbotron RIUNNE       
-                                                      <div class="jumbotron j-rid text-center hidden-xs">
-                                                         <div class="col-md-6 col-sm-6">                
-                                                             <h2>Repositorio Institucional de la Universidad Nacional del Nordeste</h2>                              
-                                                         </div>
-                                                         <div class="col-md-6 col-sm-6"> 
-                                                            <form class="form-inline" method="get" action="/xmlui/discover">
-                                                               <div class="input-group input-group-lg">
-                                                                  <input type="text" class="form-control" maxlength="200" size="50" placeholder="Encontrá tesis, artículos, informes, etc..." name="query" title="Buscar en RIUNNE">
-                                                                  </input>
-                                                                  <div class="input-group-btn">
-                                                                        <button type="submit" class="btn btn-reverse">
-                                                                           <span class="glyphicon glyphicon-search"></span>                           
-                                                                        </button>
-                                                                  </div>                 
-                                                               </div>
-                                                            </form> 
-                                                         </div> 
-                                                      </div>                                                                 
-                                                   </section>   -->                                                                                                             
+                                          <xsl:if test="'' = $request-uri"><!-- If page/home - show component -->                                                                                                                                                     
                                           </xsl:if>                              
                                           <div id="main-container" class="container-fluid">
                                              <div class="row row-offcanvas row-offcanvas-right">
@@ -61,14 +41,14 @@
                                                          <xsl:if test="'' = $request-uri"><!-- If page/home - show component -->    
                                                             <div id="carousel1" class="carousel slide hidden-xs" data-ride="carousel"><!-- Carousel RIUNNE -->                                                        
                                                                <div class="carousel-inner" role="listbox">                                                           
-                                                                  <!--<div class="item active">
+                                                                  <div class="item active">
                                                                      <img src="{$theme-path}images/home/slide/ref_riunne_liliana-ramirez.png" alt="Autor: Liliana Ramirez"/>
                                                                         <div class="carousel-caption" id="slide">
                                                                         <button type="button" class="btn btn-light-rev"><a class="slide" href="https://www.researchgate.net/profile/Liliana-Ramirez-4 +
                                                                         " target="_blank">ResearchGate</a></button>
                                                                         </div>                                                                                                                                                                                                    
-                                                                  </div>-->                                                                 
-                                                                  <div class="item active">
+                                                                  </div>                                                             
+                                                                  <div class="item">
                                                                      <img src="{$theme-path}images/home/slide/ref_riunne_dante-cuadra.png" alt="Autor: Dante Cuadra"/>
                                                                         <div class="carousel-caption" id="slide">
                                                                         <button type="button" class="btn btn-light-rev"><a class="slide" href="https://orcid.org/0000-0001-8562-2105" target="_blank">ORCID</a></button>
