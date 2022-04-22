@@ -509,7 +509,8 @@
                      <ul class="nav navbar-nav"> 
                         <xsl:attribute name="href">
                            <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
-                           <xsl:text>/submit</xsl:text>                         
+                           <xsl:text>/submit</xsl:text>
+                           <p> HOLA MUNDO </p>                         
                         </xsl:attribute>
 
 
