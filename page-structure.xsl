@@ -509,10 +509,7 @@
                      <ul class="nav navbar-nav"> 
                         <xsl:attribute name="href">
                            <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
-                           <xsl:text>/submit</xsl:text>
-                            <button class="dropdown-toggle navbar-toggle navbar-link" id="user-dropdown-toggle-xs" href="#" role="button" data-toggle="dropdown">
-                                    <b class="visible-xs glyphicon glyphicon-user" aria-hidden="true"/>
-                                 </button>
+                           <xsl:text>/submit</xsl:text>                         
                         </xsl:attribute>
 
 
