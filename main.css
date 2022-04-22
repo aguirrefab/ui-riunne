@@ -3130,15 +3130,11 @@ tbody.collapse.in {
 .nav-tabs {
 	border-bottom:1px solid #ddd
 }
-.nav-tabs>li {
-	float:left;
-	margin-bottom:-1px
-}
+
 .nav-tabs>li>a {
-	margin-right:2px;
+	margin-right: 20px;
 	line-height:1.428571429;
-	border:1px solid transparent;
-	border-radius:4px 4px 0 0
+	border-bottom: 1px solid #ccc;
 }
 .nav-tabs>li>a:hover {
 	border-color:#eee #eee #ddd
@@ -4202,7 +4198,7 @@ a.thumbnail:hover,a.thumbnail:focus,a.thumbnail.active {
 	margin-right:5px
 }
 a.list-group-item {
-	color:#118EA2;
+	color:#555;
 	border: 0px;
 	/*text-align: left;
 	//font-size: 15px;*/
@@ -4212,7 +4208,7 @@ a.list-group-item .list-group-item-heading {
 }
 a.list-group-item:hover,a.list-group-item:focus {
 	text-decoration:none;
-	color:#555;
+	color:#118EA2;
 	background-color:#f5f5f5
 }
 .list-group-item.disabled,.list-group-item.disabled:hover,.list-group-item.disabled:focus {
