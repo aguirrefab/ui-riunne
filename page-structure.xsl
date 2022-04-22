@@ -506,8 +506,20 @@
                   </button>
                   
                   <div class="navbar-header visible-xs hidden-sm hidden-md hidden-lg">                                                                                 
-                     <ul class="nav navbar-nav">                                                                 
-                        <xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']) &gt; 1">
+                     <ul class="nav navbar-nav"> 
+                        <xsl:attribute name="href">
+                           <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
+                           <xsl:text>/submit</xsl:text>
+                            <button class="dropdown-toggle navbar-toggle navbar-link" id="user-dropdown-toggle-xs" href="#" role="button" data-toggle="dropdown">
+                                    <b class="visible-xs glyphicon glyphicon-user" aria-hidden="true"/>
+                                 </button>
+                        </xsl:attribute>
+
+
+
+
+
+                        <!--<xsl:if test="count(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='supportedLocale']) &gt; 1">
                            <li id="ds-language-selection" class="dropdown">
                               <xsl:variable name="active-locale" select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
                               <button id="language-dropdown-toggle-xs" href="#" role="button" class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown">
@@ -533,8 +545,8 @@
                                     </li>
                                  </xsl:for-each>
                               </ul>
-                           </li>
-                        </xsl:if>
+                           </li> 
+                        </xsl:if>-->
                         <xsl:choose>
                            <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
                               <li class="dropdown">
