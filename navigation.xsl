@@ -28,7 +28,7 @@
             </xsl:if>  
             -->       
                            
-            <!-- Boton para subir los trabajos -->       
+            <!-- Boton para subir los trabajos 
                   <div class="list-group">
                      <a class="list-group-item">
                         <xsl:attribute name="href">
@@ -48,13 +48,13 @@
                               </div>
                            </div>
                         </div>
-                        <!-- 
+                      
                         <div class="row hidden-xs">
                            <div class="col-md-12">
                             
                               <i18n:text>xmlui.boton.subir</i18n:text>
                            </div>
-                        </div>-->
+                        </div>
                      </a>
                   </div>
 
@@ -115,7 +115,7 @@
                   </fieldset>
                </form>             
             </div>
-         </xsl:if>       
+         </xsl:if>    -->   
         
          <xsl:apply-templates/>
          <!-- DS-984 Add RSS Links to Options Box 

@@ -29,49 +29,31 @@
                                                 </div>
                                              </div>
                                           </div>                                                                                           
-                                          <xsl:if test="'' = $request-uri"><!-- If page/home - show component -->                                                                                                                                                     
-                                          </xsl:if>                              
-                                          <div id="main-container" class="container-fluid">
-                                             <div class="row row-offcanvas row-offcanvas-right">
-                                                <div class="horizontal-slider clearfix">
-                                                   <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-                                                      <xsl:apply-templates select="dri:options"/>
-                                                   </div>                                                                                                                           
-                                                      <div class="col-md-9 main-content"><!-- Comunidades Thumb --> 
-                                                         <xsl:if test="'' = $request-uri"><!-- If page/home - show component -->    
+                                          <xsl:if test="'' = $request-uri"><!-- If page/home - show component -->  
+                                                         <div id="news" class="container-fluid"><!-- Carousel RIUNNE -->                                                                                                                      
                                                             <div id="carousel1" class="carousel slide hidden-xs" data-ride="carousel"><!-- Carousel RIUNNE -->                                                        
                                                                <div class="carousel-inner" role="listbox">                                                           
                                                                   <div class="item active">
+                                                                     <a class="slide" href="https://www.researchgate.net/profile/Liliana-Ramirez-4" target="_blank">
                                                                      <img src="{$theme-path}images/home/slide/ref_riunne_liliana-ramirez.png" alt="Autor: Liliana Ramirez"/>
-                                                                        <div class="carousel-caption" id="slide">
-                                                                        <button type="button" class="btn btn-light-rev"><a class="slide" href="https://www.researchgate.net/profile/Liliana-Ramirez-4 +
-                                                                        " target="_blank">ResearchGate</a></button>
-                                                                        </div>                                                                                                                                                                                                    
-                                                                  </div>                                                             
+                                                                     </a>                                                                                                                                                                                                                                                                    
+                                                                  </div>                                                                 
                                                                   <div class="item">
-                                                                     <img src="{$theme-path}images/home/slide/ref_riunne_dante-cuadra.png" alt="Autor: Dante Cuadra"/>
-                                                                        <div class="carousel-caption" id="slide">
-                                                                        <button type="button" class="btn btn-light-rev"><a class="slide" href="https://orcid.org/0000-0001-8562-2105" target="_blank">ORCID</a></button>
-                                                                        </div>                                                                                                                                                                                                    
+                                                                     <a class="slide" href="https://orcid.org/0000-0001-8562-2105" target="_blank">
+                                                                     <img src="{$theme-path}images/home/slide/ref_riunne_dante-cuadra.png" alt="Autor: Dante Cuadra"/>  
+                                                                     </a>                                                                                                                                                                                                                                                                       
                                                                   </div>
                                                                   <div class="item">
+                                                                     <a class="slide" href="https://orcid.org/0000-0003-4696-4158" target="_blank">
                                                                      <img src="{$theme-path}images/home/slide/ref_riunne_gustavo-giusiano.png" alt="Autor: Gustavo Giusiano"/>
-                                                                        <div class="carousel-caption" id="slide">
-                                                                        <button type="button" class="btn btn-light-rev"><a class="slide" href="https://orcid.org/0000-0003-4696-4158" target="_blank">ORCID</a></button>
-                                                                        </div>                                                                                                                            
+                                                                     </a>                                                                                                                                                                                          
                                                                   </div>    
                                                                   <div class="item">
+                                                                     <a class="slide" href="https://revistas.unne.edu.ar/" target="_blank">
                                                                      <img src="{$theme-path}images/home/slide/portal.png" alt="Portal de Revistas UNNE"/>
-                                                                        <div class="carousel-caption" id="slide">
-                                                                        <button type="button" class="btn btn-light"><a class="slide" href="https://revistas.unne.edu.ar/" target="_blank">Revistas UNNE</a></button>
-                                                                        </div>
-                                                                  </div>      
-                                                                  <div class="item">
-                                                                     <img src="{$theme-path}images/home/slide/dgb.png" alt="Dirección General de Bibliotecas"/>
-                                                                        <div class="carousel-caption" id="slide">
-                                                                           <button type="button" class="btn btn-light"><a  class="slide" href="https://bib.unne.edu.ar/" target="_blank">Bibliotecas UNNE</a></button>
-                                                                        </div>                                                                                                                            
-                                                                  </div>                                                             
+                                                                     </a>                                                                   
+                                                                  </div>  
+                                                                                                                          
                                                                </div>
                                                                   <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
                                                                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -81,7 +63,18 @@
                                                                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                                                      <span class="sr-only">Siguiente</span>
                                                                   </a>                                                                                                                         
-                                                            </div>                                                         
+                                                            </div>              
+                                                         </div>                                                                                                                                                  
+                                          </xsl:if>                              
+                                          <div id="main-container" class="container-fluid">
+                                             <div class="row row-offcanvas row-offcanvas-right">
+                                                <div class="horizontal-slider clearfix">
+                                                   <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                                                      <xsl:apply-templates select="dri:options"/>
+                                                   </div>                                                                                                                           
+                                                      <div class="col-md-9 main-content"><!-- Comunidades Thumb --> 
+                                                         <xsl:if test="'' = $request-uri"><!-- If page/home - show component -->    
+                                                                                                                                                                   
                                                             <div class="col-md-12" id="comunities">                                                                                                                                                                 
                                                                      <div class="row hidden-xs" id="comunity"> 
                                                                         <div class="col-sm-3 card_img">
@@ -221,6 +214,8 @@
                </xsl:choose>
                <!-- Javascript at the bottom for fast page loading -->
                <xsl:call-template name="addJavascript"/>
+               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+               
             </body>
                   <!-- The footer div, dropping whatever extra information is needed on the page. It will -->
                   <!-- most likely be something similar in structure to the currently given example. -->
@@ -471,7 +466,7 @@
          <xsl:if test="confman:getProperty('webui.browse.render-scientific-formulas') = 'true'">
             <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], ignoreClass: "detail-field-data|detailtable|exception" }, TeX: { Macros: { AA: '{\\mathring A}' } } });</script>
             <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">&#160;</script>
-         </xsl:if>
+         </xsl:if>         
       </head>
    </xsl:template>
    <!-- The header (distinct from the HTML head element) contains the title, subtitle, login box and various -->
