@@ -1,9 +1,9 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url(../vendor/jquery-ui/themes/base/jquery-ui.css);
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');;
 
 html {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	-ms-text-size-adjust:100%;
 	-webkit-text-size-adjust:100%
 }
@@ -844,8 +844,8 @@ html {
 	-webkit-tap-highlight-color:transparent
 }
 body {
-	font-family: 'Poppins', sans-serif;
-	font-size: 16px;	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;	
 	text-align: justify;	
 	color: #000;
 }
