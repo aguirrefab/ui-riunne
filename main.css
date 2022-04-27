@@ -2785,7 +2785,6 @@ tbody.collapse.in {
 }
 .open>.dropdown-menu {
 	display:block;
-	background-color: #118EA2;
 }
 .open>a {
 	outline:0
@@ -5477,7 +5476,7 @@ button.close {
 }
 @media (min-width:1200px) {
 	.visible-lg {
-		display:block !important
+		display:flex !important
 	}
 	table.visible-lg {
 		display:table
@@ -7023,7 +7022,7 @@ textarea {
 }
 
 #comunities{
-	padding: 10px 0px 20px 10px;
+	padding: 10px 10px;
 }
 
 .text_head{
@@ -7038,14 +7037,7 @@ textarea {
 	font-size: 18px
 } 
 
-;
 /* FIN: COMUNIDADES PRINCIPALES */
-
-#comunity {
-	padding: 20px 0px 20px 0px;
-	margin: 0;
-}
-
 .card_img{
 	padding-left: 2px;
 	padding-right: 2px;

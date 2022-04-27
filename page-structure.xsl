@@ -74,7 +74,7 @@
                                                                </div>             
                                                                                                                                                                        
                                                             <div class="col-md-12" id="comunities">                                                                                                                                                                 
-                                                                     <div class="row hidden-xs" id="comunity"> 
+                                                                     <div class="row hidden-xs"> 
                                                                         <div class="col-sm-3 card_img">
                                                                            <div class="card">
                                                                               <a href="handle/123456789/31">                           
@@ -104,7 +104,7 @@
                                                                            </div>
                                                                         </div>  
                                                                      </div>
-                                                                     <div class="row hidden-xs" id="comunity"> 
+                                                                     <div class="row hidden-xs"> 
                                                                          <div class="col-sm-3 card_img">
                                                                            <div class="card">
                                                                               <a href="handle/123456789/71">                           
@@ -134,7 +134,7 @@
                                                                            </div>
                                                                         </div> 
                                                                      </div>
-                                                                     <div class="row hidden-xs" id="comunity"> 
+                                                                     <div class="row hidden-xs"> 
                                                                         <div class="col-sm-3 card_img">
                                                                            <div class="card">
                                                                               <a href="handle/123456789/111">                           
@@ -164,7 +164,7 @@
                                                                            </div>
                                                                         </div>
                                                                      </div>
-                                                                     <div class="row hidden-xs" id="comunity"> 
+                                                                     <div class="row hidden-xs"> 
                                                                         <div class="col-sm-3 card_img">
                                                                            <div class="card">
                                                                               <a href="handle/123456789/27504">                           
