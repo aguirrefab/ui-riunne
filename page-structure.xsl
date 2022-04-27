@@ -28,44 +28,8 @@
                                                    <xsl:text>JavaScript is disabled for your browser. Some features of this site may not work without it.</xsl:text>
                                                 </div>
                                              </div>
-                                          </div>                                                                                           
-                                          <xsl:if test="'' = $request-uri"><!-- If page/home - show component -->  
-                                                         <div id="news" class="container-fluid"><!-- Carousel RIUNNE -->                                                                                                                      
-                                                            <div id="carousel1" class="carousel slide hidden-xs" data-ride="carousel"><!-- Carousel RIUNNE -->                                                        
-                                                               <div class="carousel-inner" role="listbox">                                                           
-                                                                  <div class="item active">
-                                                                     <a class="slide" href="https://www.researchgate.net/profile/Liliana-Ramirez-4" target="_blank">
-                                                                     <img src="{$theme-path}images/home/slide/ref_riunne_liliana-ramirez.png" alt="Autor: Liliana Ramirez"/>
-                                                                     </a>                                                                                                                                                                                                                                                                    
-                                                                  </div>                                                                 
-                                                                  <div class="item">
-                                                                     <a class="slide" href="https://orcid.org/0000-0001-8562-2105" target="_blank">
-                                                                     <img src="{$theme-path}images/home/slide/ref_riunne_dante-cuadra.png" alt="Autor: Dante Cuadra"/>  
-                                                                     </a>                                                                                                                                                                                                                                                                       
-                                                                  </div>
-                                                                  <div class="item">
-                                                                     <a class="slide" href="https://orcid.org/0000-0003-4696-4158" target="_blank">
-                                                                     <img src="{$theme-path}images/home/slide/ref_riunne_gustavo-giusiano.png" alt="Autor: Gustavo Giusiano"/>
-                                                                     </a>                                                                                                                                                                                          
-                                                                  </div>    
-                                                                  <div class="item">
-                                                                     <a class="slide" href="https://revistas.unne.edu.ar/" target="_blank">
-                                                                     <img src="{$theme-path}images/home/slide/portal.png" alt="Portal de Revistas UNNE"/>
-                                                                     </a>                                                                   
-                                                                  </div>  
-                                                                                                                          
-                                                               </div>
-                                                                  <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
-                                                                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                                                     <span class="sr-only">Anterior</span>
-                                                                  </a>
-                                                                  <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
-                                                                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                                                     <span class="sr-only">Siguiente</span>
-                                                                  </a>                                                                                                                         
-                                                            </div>              
-                                                         </div>                                                                                                                                                  
-                                          </xsl:if>                              
+                                          </div>                                                                                          
+                                       
                                           <div id="main-container" class="container-fluid">
                                              <div class="row row-offcanvas row-offcanvas-right">
                                                 <div class="horizontal-slider clearfix">
@@ -74,7 +38,41 @@
                                                    </div>                                                                                                                           
                                                       <div class="col-md-9 main-content"><!-- Comunidades Thumb --> 
                                                          <xsl:if test="'' = $request-uri"><!-- If page/home - show component -->    
-                                                                                                                                                                   
+                                                            <!--<div id="news" class="container-fluid"> Carousel RIUNNE -->                                                                                                                      
+                                                               <div id="carousel1" class="carousel slide hidden-xs" data-ride="carousel"><!-- Carousel RIUNNE -->                                                        
+                                                                  <div class="carousel-inner" role="listbox">                                                           
+                                                                     <div class="item active">
+                                                                        <a class="slide" href="https://www.researchgate.net/profile/Liliana-Ramirez-4" target="_blank">
+                                                                        <img src="{$theme-path}images/home/slide/ref_riunne_liliana-ramirez.png" alt="Autor: Liliana Ramirez"/>
+                                                                        </a>                                                                                                                                                                                                                                                                    
+                                                                     </div>                                                                 
+                                                                     <div class="item">
+                                                                        <a class="slide" href="https://orcid.org/0000-0001-8562-2105" target="_blank">
+                                                                        <img src="{$theme-path}images/home/slide/ref_riunne_dante-cuadra.png" alt="Autor: Dante Cuadra"/>  
+                                                                        </a>                                                                                                                                                                                                                                                                       
+                                                                     </div>
+                                                                     <div class="item">
+                                                                        <a class="slide" href="https://orcid.org/0000-0003-4696-4158" target="_blank">
+                                                                        <img src="{$theme-path}images/home/slide/ref_riunne_gustavo-giusiano.png" alt="Autor: Gustavo Giusiano"/>
+                                                                        </a>                                                                                                                                                                                          
+                                                                     </div>    
+                                                                     <div class="item">
+                                                                        <a class="slide" href="https://revistas.unne.edu.ar/" target="_blank">
+                                                                        <img src="{$theme-path}images/home/slide/portal.png" alt="Portal de Revistas UNNE"/>
+                                                                        </a>                                                                   
+                                                                     </div>  
+                                                                                                                           
+                                                                  </div>
+                                                                     <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+                                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                                        <span class="sr-only">Anterior</span>
+                                                                     </a>
+                                                                     <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+                                                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                                        <span class="sr-only">Siguiente</span>
+                                                                     </a>                                                                                                                         
+                                                               </div>             
+                                                                                                                                                                       
                                                             <div class="col-md-12" id="comunities">                                                                                                                                                                 
                                                                      <div class="row hidden-xs" id="comunity"> 
                                                                         <div class="col-sm-3 card_img">

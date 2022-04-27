@@ -5716,9 +5716,10 @@ footer>.container-fluid {
 footer>.container .pull-right {
 	text-align:center
 }
+/*
 #ds-options {
 	padding-top:10px
-}
+}*/
 @media (min-width:768px) and (max-width:991px) {
 	#ds-options {
 		padding-right:14px
