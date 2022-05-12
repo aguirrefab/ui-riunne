@@ -1,9 +1,8 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url(../vendor/jquery-ui/themes/base/jquery-ui.css);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html {
-	font-family: 'Open Sans', sans-serif;
+html {	
 	-ms-text-size-adjust:100%;
 	-webkit-text-size-adjust:100%
 }
@@ -844,8 +843,8 @@ html {
 	-webkit-tap-highlight-color:transparent
 }
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;	
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;	
 	text-align: justify;	
 	color: #000;
 }
@@ -5715,10 +5714,11 @@ footer>.container-fluid {
 footer>.container .pull-right {
 	text-align:center
 }
-/*
+
 #ds-options {
-	padding-top:10px
-}*/
+	padding-top:20px
+}
+
 @media (min-width:768px) and (max-width:991px) {
 	#ds-options {
 		padding-right:14px
@@ -5769,7 +5769,7 @@ footer>.container .pull-right {
 }
 
 .main-content {  
-  	padding-top: 0px;	
+  	padding-top: 20px;	
 }
 
 .sidebar-col {
@@ -6095,7 +6095,9 @@ i.collapse {
 }
 #aspect_artifactbrowser_CommunityBrowser_div_comunity-browser ul {
 	list-style:none;
-	padding-left:0
+	padding-left:0;
+	display: none;
+	
 }
 .ds-author-picture.small {
 	margin-top:5px
@@ -6117,11 +6119,7 @@ i.collapse {
 	width:307px;
 	top:15px
 }
-@media (min-width:768px) {
-	.community-browser-wrapper {
-		max-width:600px
-	}
-}
+
 .community-browser-row {
 	padding-top:5px;
 	padding-bottom:5px;
@@ -6165,10 +6163,10 @@ i.collapse {
 	.community-browser-row .half-indented>* {
 		margin-left:4.1666666667%
 	}
-	/*
+	
 	#aspect_artifactbrowser_CommunityBrowser_div_comunity-browser {
 		display:none
-	}*/
+	}
 	.ds-div-head {
 		display: none;
 	}
@@ -7013,7 +7011,7 @@ textarea {
 }
 
 #comunities{
-	padding: 10px 10px;
+	padding: 10px 0px;
 }
 
 .text_head{
@@ -7152,4 +7150,17 @@ textarea {
   /* INICIO: ENVIOS RECIENTES */
 #news {
 	padding: 0px;	
+}
+
+.comunidad-view{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.comunidad-view p{
+	color: #000;
+	font-size: 15;	
+	text-align: center;
+	padding: 0px 20px;
+	margin: 0px;
 }
