@@ -36,7 +36,7 @@
                                                    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
                                                       <xsl:apply-templates select="dri:options"/>
                                                    </div>                                                                                                                           
-                                                      <div class="col-md-9 main-content"><!-- Comunidades Thumb --> 
+                                                      <div class="col-md-9 main-content content-riunne"><!-- Comunidades Thumb --> 
                                                          <xsl:if test="'' = $request-uri"><!-- If page/home - show component -->    
                                                             <!--<div id="news" class="container-fluid"> Carousel RIUNNE -->                                                                                                                      
                                                                <div id="carousel1" class="carousel slide hidden-xs" data-ride="carousel"><!-- Carousel RIUNNE -->                                                        
@@ -74,136 +74,89 @@
                                                                </div>             
                                                                                                                                                                        
                                                             <div class="col-md-12" id="comunities">                                                                                                                                                                 
-                                                                     <div class="row hidden-xs"> 
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
+                                                                     <div class="comunidad-view hidden-xs">                                                                
+                                                                     
                                                                               <a href="handle/123456789/31">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Arquitectura y Urbanismo" src="{concat($theme-path, 'images/comunidades/75.png')}"/>                 
-                                                                              </a>                                                                            
-                                                                           </div>
-                                                                        </div>
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
-                                                                              <a href="handle/123456789/41">                           
-                                                                                 <img class="card-img-top"  alt="Facultad de Artes, Diseño y Ciencias de la Cultura" src="{concat($theme-path, 'images/comunidades/80.png')}"/>
-                                                                              </a>                                                                               
-                                                                           </div>
-                                                                        </div>
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
-                                                                              <a href="handle/123456789/51">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Ciencias Agrarias" src="{concat($theme-path, 'images/comunidades/85.png')}"/>
-                                                                              </a>                                                                               
-                                                                           </div>
-                                                                        </div>   
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
-                                                                              <a href="handle/123456789/61">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Ciencias Económicas" src="{concat($theme-path, 'images/comunidades/95.png')}"/>
-                                                                              </a>                                                                                   
-                                                                           </div>
-                                                                        </div>  
-                                                                     </div>
-                                                                     <div class="row hidden-xs"> 
-                                                                         <div class="col-sm-3 card_img">
-                                                                           <div class="card">
-                                                                              <a href="handle/123456789/71">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Ciencias Exactas y Naturales y Agrimensura" src="{concat($theme-path, 'images/comunidades/100.png')}"/>
-                                                                              </a>                                                                              
-                                                                           </div>
-                                                                        </div>   
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
-                                                                              <a href="handle/123456789/81">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Ciencias Veterinarias y Agrimensura" src="{concat($theme-path, 'images/comunidades/110.png')}"/>
-                                                                              </a>                                                                            
-                                                                           </div>
-                                                                        </div>   
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
-                                                                              <a href="handle/123456789/91">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Derecho y Ciencias Sociales y Políticas" src="{concat($theme-path, 'images/comunidades/105.png')}"/>
-                                                                              </a>                                                                              
-                                                                           </div>
-                                                                        </div>   
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
+                                                                                 <img class="card-img-top" alt="Facultad de Arquitectura y Urbanismo" src="{concat($theme-path, 'images/comunidades/00.png')}"/>                 
+                                                                                 <p>Arquitectura y Urbanismo</p>
+                                                                              </a>  
+                                                                               
+                                                                               <a href="handle/123456789/41">                           
+                                                                                 <img class="card-img-top" alt="Facultad de Artes, Diseño y Ciencias de la Cultura" src="{concat($theme-path, 'images/comunidades/01.png')}"/>                 
+                                                                                 <p>Artes, Diseño y Ciencias de la Cultura</p>
+                                                                              </a>  
+                                                                               <a href="handle/123456789/51">                           
+                                                                                 <img class="card-img-top" alt="Facultad de Ciencias Agrarias" src="{concat($theme-path, 'images/comunidades/02.png')}"/>                 
+                                                                                 <p>Ciencias Agrarias</p>
+                                                                              </a>  
+                                                                               <a href="handle/123456789/61">                           
+                                                                                 <img class="card-img-top" alt="Facultad de Ciencias Económicas" src="{concat($theme-path, 'images/comunidades/03.png')}"/>                 
+                                                                                 <p>Ciencias Económicas</p>
+                                                                              </a>  
+                                                                                <a href="handle/123456789/71">                           
+                                                                                 <img class="card-img-top" alt="Facultad de Ciencias Exactas y Naturales y Agrimensura" src="{concat($theme-path, 'images/comunidades/04.png')}"/>                 
+                                                                                 <p>Ciencias Exactas y Naturales y Agrimensura</p>
+                                                                              </a>  
+                                                                                <a href="handle/123456789/81">                           
+                                                                                 <img class="card-img-top" alt="Facultad de Ciencias Veterinarias" src="{concat($theme-path, 'images/comunidades/05.png')}"/>                 
+                                                                                 <p>Ciencias Veterinarias</p>
+                                                                              </a>  
+                                                                                <a href="handle/123456789/91">                           
+                                                                                 <img class="card-img-top" alt="Facultad de Derecho y Ciencias Sociales y Políticas" src="{concat($theme-path, 'images/comunidades/06.png')}"/>                 
+                                                                                 <p>Derecho y Ciencias Sociales y Políticas</p>
+                                                                              </a>  
                                                                               <a href="handle/123456789/101">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Humanidades" src="{concat($theme-path, 'images/comunidades/115.png')}"/>
-                                                                              </a>                                                                            
-                                                                           </div>
-                                                                        </div> 
-                                                                     </div>
-                                                                     <div class="row hidden-xs"> 
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
+                                                                                 <img class="card-img-top" alt="Facultad de Humanidades" src="{concat($theme-path, 'images/comunidades/07.png')}"/>                 
+                                                                                 <p>Humanidades</p>
+                                                                              </a> 
                                                                               <a href="handle/123456789/111">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Ingeniería" src="{concat($theme-path, 'images/comunidades/130.png')}"/>
-                                                                              </a>                                                                             
-                                                                           </div>
-                                                                        </div>   
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
-                                                                              <a href="handle/123456789/121">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Medicina" src="{concat($theme-path, 'images/comunidades/125.png')}"/>
-                                                                              </a>                                                                              
-                                                                           </div>
-                                                                        </div> 
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
-                                                                              <a href="handle/123456789/131">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Odontología" src="{concat($theme-path, 'images/comunidades/135.png')}"/>
-                                                                              </a>                                                                             
-                                                                           </div>
-                                                                        </div> 
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
-                                                                              <a href="handle/123456789/141">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Ciencias Criminalísticas y Criminología" src="{concat($theme-path, 'images/comunidades/140.png')}"/>                 
-                                                                              </a>                                                                              
-                                                                           </div>
-                                                                        </div>
-                                                                     </div>
-                                                                     <div class="row hidden-xs"> 
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
+                                                                                 <img class="card-img-top" alt="Facultad de Ingeniería" src="{concat($theme-path, 'images/comunidades/08.png')}"/>                 
+                                                                                 <p>Ingeniería</p>
+                                                                              </a> 
+                                                                               <a href="handle/123456789/121">                           
+                                                                                 <img class="card-img-top" alt="Facultad de Medicina" src="{concat($theme-path, 'images/comunidades/09.png')}"/>                 
+                                                                                 <p>Medicina</p>
+                                                                              </a>                                                                                
+                                                                               <a href="handle/123456789/131">                           
+                                                                                 <img class="card-img-top" alt="Facultad de Odontología" src="{concat($theme-path, 'images/comunidades/10.png')}"/>                 
+                                                                                 <p>Odontología</p>
+                                                                              </a> 
+                                                                               <a href="handle/123456789/141">                           
+                                                                                 <img class="card-img-top" alt="Facultad de Ciencias Criminalísticas y Criminología" src="{concat($theme-path, 'images/comunidades/11.png')}"/>                 
+                                                                                 <p>Ciencias Criminalísticas y Criminología</p>
+                                                                              </a>
                                                                               <a href="handle/123456789/27504">                           
-                                                                                 <img class="card-img-top" alt="Facultad de Medicina Regional" src="{concat($theme-path, 'images/comunidades/1587.png')}"/>                 
-                                                                              </a>                                                                              
-                                                                           </div>
-                                                                        </div>   
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
+                                                                                 <img class="card-img-top" alt="Facultad de Medicina Regional" src="{concat($theme-path, 'images/comunidades/12.png')}"/>                 
+                                                                                 <p>Medicina Regional</p>
+                                                                              </a>
                                                                               <a href="handle/123456789/1">                           
-                                                                                 <img class="card-img-top" alt="RIUNNE" src="{concat($theme-path, 'images/comunidades/884.png')}"/>                 
-                                                                              </a>                                                                              
-                                                                           </div>
-                                                                        </div>        
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
+                                                                                 <img class="card-img-top" alt="Repositorio Institucional UNNE" src="{concat($theme-path, 'images/comunidades/13.png')}"/>                 
+                                                                                 <p>Repositorio Institucional</p>
+                                                                              </a>
                                                                               <a href="handle/123456789/25">                           
-                                                                                 <img class="card-img-top" alt="CONICET/UNNE" src="{concat($theme-path, 'images/comunidades/895.png')}"/>                 
-                                                                              </a>                                                                              
-                                                                           </div>
-                                                                        </div>      
-                                                                        <div class="col-sm-3 card_img">
-                                                                           <div class="card">
-                                                                              <a href="handle/123456789/15">                           
-                                                                                 <img class="card-img-top" alt="Autoarchivo RIUNNE" src="{concat($theme-path, 'images/comunidades/245.png')}"/>                 
-                                                                              </a>                                                                              
-                                                                           </div>
-                                                                        </div>                                                    
-                                                                     </div>
+                                                                                 <img class="card-img-top" alt="CONICET / UNNE" src="{concat($theme-path, 'images/comunidades/14.png')}"/>                 
+                                                                                 <p>CONICET Nordeste</p>
+                                                                              </a>
+                                                                               <a href="handle/123456789/15">                           
+                                                                                 <img class="card-img-top" alt="Autoarchivo RIUNNE" src="{concat($theme-path, 'images/comunidades/15.png')}"/>                 
+                                                                                 <p>Autoarchivo RIUNNE</p>
+                                                                              </a>   
+                                                                                <a href="handle/123456789/28471">                           
+                                                                                 <img class="card-img-top" alt="Archivo Institucional UNNE" src="{concat($theme-path, 'images/comunidades/16.png')}"/>                 
+                                                                                 <p>Archivo Institucional UNNE</p>
+                                                                              </a>                                                                                                       
+                                                                        </div>   
                                                                <div class="text_head">                
-                                                                  <h3>Ingresos recientes</h3>                                                                                         
+                                                                  <h3></h3>                                                                                         
                                                                </div>  
                                                             </div> 
-                                                         </xsl:if> 
+                                                         </xsl:if>                                                        
                                                             <!-- Comunidades en lista y envios recientes-->
                                                             <xsl:apply-templates select="*[not(self::dri:options)]"/>
                                                             <div class="visible-xs visible-sm">
                                                                <xsl:call-template name="buildFooter"/>
                                                             </div>    
+                                                         
                                                       </div>                                                                                                                                                                                                                                                                                                                                                           
                                                 </div>                                           
                                              </div>                                                
@@ -345,6 +298,7 @@
             </link>
          </xsl:for-each>
          <link rel="stylesheet" href="{concat($theme-path, 'styles/main.css')}"/>
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"/>
          <!-- Add syndication feeds -->
          <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
             <link rel="alternate" type="application">
@@ -624,12 +578,9 @@
                                              <a id="user-dropdown-toggle" href="#" role="button" class="dropdown-toggle"
                                                 data-toggle="dropdown">
                                                 <span class="hidden-xs">
+                                                      Hola,                                                    
                                                       <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
-                                 dri:metadata[@element='identifier' and @qualifier='firstName']"/>
-                                                      <xsl:text> </xsl:text>
-                                                      <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
-                                 dri:metadata[@element='identifier' and @qualifier='lastName']"/>
-                                                      &#160;
+                                 dri:metadata[@element='identifier' and @qualifier= 'firstName'] "/>                                                      
                                                       <b class="caret"/>
                                                 </span>
                                              </a>
@@ -652,16 +603,25 @@
                                           </li>
                                     </xsl:when>
                                     <xsl:otherwise>
-                                 <ul class="nav navbar-nav pull-left hidden-sm">
-                                    <li>
-                                        <a href="{/dri:document/dri:meta/dri:userMeta/
-                            dri:metadata[@element='identifier' and @qualifier='loginURL']}">
-                                            <span class="hidden-xs">
-                                                <i18n:text>xmlui.dri2xhtml.structural.login</i18n:text>
-                                            </span>
-                                        </a>
-                                    </li>
-                                 </ul>
+                                       <ul class="nav navbar-nav pull-left hidden-sm">
+                                          <button class="btn btn-primary btn-riunne" type="button">
+                                             <a href="{/dri:document/dri:meta/dri:userMeta/dri:metadata[@element='identifier' and @qualifier='register']}">
+                                                <span class="hidden-xs">
+                                                      <i18n:text>xmlui.dri2xhtml.structural.register</i18n:text>
+                                                </span>
+                                             </a>
+                                          </button>
+                                       </ul>
+
+                                       <ul class="nav navbar-nav pull-left hidden-sm">
+                                          <button class="btn btn-primary btn-riunne" type="button">
+                                             <a href="{/dri:document/dri:meta/dri:userMeta/dri:metadata[@element='identifier' and @qualifier='loginURL']}">
+                                                <span class="hidden-xs">
+                                                      <i18n:text>xmlui.dri2xhtml.structural.login</i18n:text>
+                                                </span>
+                                             </a>
+                                          </button>
+                                       </ul>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </ul>  
@@ -674,12 +634,12 @@
                            <span class="icon-bar"></span>
                         </button>                 
                </div>     
-            </div>     
-         </div> 
-         <!-- Navbar personalizado con los botones para acceder a las paginas estaticas -->
-               <div class="container-fluid hidden-xs" id="nav">               
-                  <ul>                         
-                     <li>
+            </div>
+            <!-- Navbar personalizado con los botones para acceder a las paginas estaticas -->
+               <div class="container-riunne hidden-xs" id="nav"> 
+                                        
+                     <ul>                         
+                        <li>
                         <a>                                 
                            <xsl:attribute name="href">
                            <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
@@ -733,8 +693,19 @@
                            <i18n:text>xmlui.dri2xhtml.structural.contact-link</i18n:text>
                         </a>
                      </li>
-                  </ul>            
-               </div>         
+
+                  </ul>    
+                   <div class="right">   
+                        <a class="bi bi-facebook btn-social" style="color: #4267B2" href="https://es-la.facebook.com/RepositorioRiunne/" target="_blank">                             
+                        </a>                      
+                        <a class="bi bi-twitter btn-social" style="color: #1DA1F2" href="https://twitter.com/repositoriounne" target="_blank">                             
+                        </a>
+                        <a class="bi bi-youtube btn-social" style="color: #FF0000" href="https://www.youtube.com/channel/UCYqTLRim5pK3UGCFnF-vO3Q" target="_blank">                          
+                        </a>                                                   
+                     </div>                                 
+               </div>           
+         </div> 
+            
       </header>   
    </xsl:template>    
    <!-- placeholders for header images --> 

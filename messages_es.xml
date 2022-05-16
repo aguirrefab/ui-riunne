@@ -1889,7 +1889,8 @@
    <message key="xmlui.dri2xhtml.structural.head-subtitle">Repositorio Dspace</message>
    <message key="xmlui.dri2xhtml.structural.profile">Perfil:</message>
    <message key="xmlui.dri2xhtml.structural.logout">Cerrar Sesión</message>
-   <message key="xmlui.dri2xhtml.structural.login">Iniciar Sesión</message>
+   <message key="xmlui.dri2xhtml.structural.login">Ingresar</message>
+   <message key="xmlui.dri2xhtml.structural.register">Registro</message>
    <message key="xmlui.dri2xhtml.structural.search">Buscar en RIUNNE</message>
    <message key="xmlui.dri2xhtml.structural.search-advanced">Búsqueda avanzada</message>
    <message key="xmlui.dri2xhtml.structural.search-in-community">Esta comunidad</message>
