@@ -602,18 +602,21 @@
                                              </ul>
                                           </li>
                                     </xsl:when>
-                                    <xsl:otherwise>
-                                       <ul class="nav navbar-nav pull-left hidden-sm">
-                                          <button class="btn btn-primary btn-riunne" type="button">
-                                             <a href="{/dri:document/dri:meta/dri:userMeta/dri:metadata[@element='identifier' and @qualifier='register']}">
-                                                <span class="hidden-xs">
-                                                      <i18n:text>xmlui.dri2xhtml.structural.register</i18n:text>
-                                                </span>
-                                             </a>
-                                          </button>
-                                       </ul>
+                                    <xsl:otherwise>                                   
 
                                        <ul class="nav navbar-nav pull-left hidden-sm">
+                                          <button class="btn btn-primary btn-riunne" type="button">
+                                             <a>                                            
+                                                <xsl:attribute name="href">
+                                                   <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
+                                                   <xsl:text>/register</xsl:text>
+                                                </xsl:attribute>
+                                                <span class="hidden-xs">
+                                                      <i18n:text>xmlui.dri2xhtml.structural.register</i18n:text>
+                                                </span>                                             
+                                             </a>
+                                          </button>
+                                          
                                           <button class="btn btn-primary btn-riunne" type="button">
                                              <a href="{/dri:document/dri:meta/dri:userMeta/dri:metadata[@element='identifier' and @qualifier='loginURL']}">
                                                 <span class="hidden-xs">
