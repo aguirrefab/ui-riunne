@@ -602,8 +602,7 @@
                                              </ul>
                                           </li>
                                     </xsl:when>
-                                    <xsl:otherwise>                                   
-
+                                    <xsl:otherwise>                                  
                                        <ul class="nav navbar-nav pull-left hidden-sm">
                                           <button class="btn btn-primary btn-riunne" type="button">
                                              <a>                                            
@@ -615,8 +614,7 @@
                                                       <i18n:text>xmlui.dri2xhtml.structural.register</i18n:text>
                                                 </span>                                             
                                              </a>
-                                          </button>
-                                          
+                                          </button>                                          
                                           <button class="btn btn-primary btn-riunne" type="button">
                                              <a href="{/dri:document/dri:meta/dri:userMeta/dri:metadata[@element='identifier' and @qualifier='loginURL']}">
                                                 <span class="hidden-xs">
