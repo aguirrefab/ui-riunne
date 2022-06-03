@@ -137,6 +137,14 @@
                                                                                  <img class="card-img-top" alt="CONICET / UNNE" src="{concat($theme-path, 'images/comunidades/14.png')}"/>                 
                                                                                  <p>CONICET Nordeste</p>
                                                                               </a>
+                                                                               <a href="handle/123456789/27595">                           
+                                                                                 <img class="card-img-top" alt="Centro de Estudios Sociales" src="{concat($theme-path, 'images/comunidades/27595.png')}"/>                 
+                                                                                 <p>Centro de Estudios Sociales</p>
+                                                                              </a> 
+                                                                              <a href="handle/123456789/33461">                           
+                                                                                 <img class="card-img-top" alt="Dependencias UNNE" src="{concat($theme-path, 'images/comunidades/33461.png')}"/>                 
+                                                                                 <p>Dependencias UNNE</p>
+                                                                              </a>
                                                                                <a href="handle/123456789/15">                           
                                                                                  <img class="card-img-top" alt="Autoarchivo RIUNNE" src="{concat($theme-path, 'images/comunidades/15.png')}"/>                 
                                                                                  <p>Autoarchivo RIUNNE</p>
